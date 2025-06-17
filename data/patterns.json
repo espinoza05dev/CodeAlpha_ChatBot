@@ -1,0 +1,154 @@
+{
+  "patterns": {
+    "greeting": {
+      "keywords": ["hello", "hi", "hey", "good morning", "good afternoon", "good evening", "greetings", "howdy", "what's up", "sup"],
+      "phrases": ["how are you", "how do you do", "nice to meet you", "good to see you"],
+      "regex": "^(hi|hello|hey)\\b.*",
+      "priority": 1
+    },
+    "goodbye": {
+      "keywords": ["bye", "goodbye", "farewell", "see you", "later", "exit", "quit", "stop", "end", "leave"],
+      "phrases": ["see you later", "talk to you later", "catch you later", "until next time", "have a good day", "take care"],
+      "regex": "^(bye|goodbye|exit|quit)\\b.*",
+      "priority": 1
+    },
+    "help": {
+      "keywords": ["help", "assist", "support", "aid", "guide", "explain", "how", "what", "can you"],
+      "phrases": ["i need help", "can you help", "help me", "i don't know", "i'm confused", "what can you do"],
+      "regex": "\\b(help|assist|support)\\b.*",
+      "priority": 2
+    },
+    "thanks": {
+      "keywords": ["thank", "thanks", "appreciate", "grateful", "thx", "ty"],
+      "phrases": ["thank you", "thanks a lot", "much appreciated", "i appreciate it"],
+      "regex": "\\b(thank|thanks)\\b.*",
+      "priority": 1
+    },
+    "yes": {
+      "keywords": ["yes", "yeah", "yep", "sure", "ok", "okay", "alright", "correct", "right", "exactly"],
+      "phrases": ["that's right", "you got it", "sounds good", "i agree"],
+      "regex": "^(yes|yeah|yep|ok|okay)\\b.*",
+      "priority": 1
+    },
+    "no": {
+      "keywords": ["no", "nope", "nah", "never", "not really", "incorrect", "wrong"],
+      "phrases": ["i don't think so", "that's not right", "i disagree", "not really"],
+      "regex": "^(no|nope|nah)\\b.*",
+      "priority": 1
+    },
+    "question": {
+      "keywords": ["what", "where", "when", "why", "how", "who", "which", "whose"],
+      "phrases": ["tell me about", "i want to know", "can you explain", "what is"],
+      "regex": "^(what|where|when|why|how|who|which)\\b.*\\?",
+      "priority": 3
+    },
+    "apologize": {
+      "keywords": ["sorry", "apologize", "my bad", "oops", "mistake", "error"],
+      "phrases": ["i'm sorry", "my apologies", "i apologize", "sorry about that"],
+      "regex": "\\b(sorry|apologize)\\b.*",
+      "priority": 2
+    },
+    "compliment": {
+      "keywords": ["good", "great", "awesome", "excellent", "amazing", "wonderful", "fantastic", "perfect"],
+      "phrases": ["you're great", "good job", "well done", "that's amazing", "you're awesome"],
+      "regex": "\\b(good|great|awesome|excellent)\\b.*",
+      "priority": 2
+    },
+    "complaint": {
+      "keywords": ["bad", "terrible", "awful", "horrible", "worst", "hate", "sucks", "useless"],
+      "phrases": ["this is bad", "doesn't work", "not working", "having problems", "this sucks"],
+      "regex": "\\b(bad|terrible|awful|horrible|hate)\\b.*",
+      "priority": 2
+    },
+    "small_talk": {
+      "keywords": ["how are you", "how's it going", "what's new", "how have you been"],
+      "phrases": ["how are you doing", "what's up with you", "how's your day", "how are things"],
+      "regex": "how\\s+(are|is)\\s+you.*",
+      "priority": 3
+    },
+    "contact": {
+      "keywords": ["contact", "phone", "email", "address", "reach", "call", "write"],
+      "phrases": ["contact information", "how to reach", "get in touch", "contact details"],
+      "regex": "\\b(contact|phone|email|call)\\b.*",
+      "priority": 2
+    },
+    "hours": {
+      "keywords": ["hours", "time", "open", "closed", "schedule", "when"],
+      "phrases": ["business hours", "opening hours", "what time", "when are you open", "are you open"],
+      "regex": "\\b(hours|time|open|closed|schedule)\\b.*",
+      "priority": 2
+    },
+    "price": {
+      "keywords": ["price", "cost", "fee", "charge", "money", "pay", "payment", "expensive", "cheap"],
+      "phrases": ["how much", "what does it cost", "pricing information", "cost of"],
+      "regex": "\\b(price|cost|fee|charge|money|pay)\\b.*",
+      "priority": 2
+    },
+    "location": {
+      "keywords": ["where", "location", "address", "place", "find", "directions"],
+      "phrases": ["where are you", "where is", "how to find", "your location"],
+      "regex": "\\bwhere\\b.*",
+      "priority": 2
+    },
+    "weather": {
+      "keywords": ["weather", "temperature", "rain", "sunny", "cloudy", "snow", "hot", "cold"],
+      "phrases": ["how's the weather", "what's the weather like", "weather forecast"],
+      "regex": "\\b(weather|temperature|rain|sunny)\\b.*",
+      "priority": 3
+    },
+    "name": {
+      "keywords": ["name", "called", "who are you", "your name"],
+      "phrases": ["what's your name", "who are you", "what are you called"],
+      "regex": "\\b(name|called)\\b.*|who\\s+are\\s+you",
+      "priority": 2
+    },
+    "age": {
+      "keywords": ["age", "old", "how long", "when were you"],
+      "phrases": ["how old are you", "what's your age", "when were you created"],
+      "regex": "\\b(age|old)\\b.*|how\\s+old",
+      "priority": 3
+    },
+    "capability": {
+      "keywords": ["can you", "do you", "are you able", "what can you do"],
+      "phrases": ["what can you do", "what are you capable of", "can you help with"],
+      "regex": "\\b(can\\s+you|do\\s+you|able)\\b.*",
+      "priority": 2
+    },
+    "joke": {
+      "keywords": ["joke", "funny", "laugh", "humor", "tell me something funny"],
+      "phrases": ["tell me a joke", "make me laugh", "something funny"],
+      "regex": "\\b(joke|funny|laugh)\\b.*",
+      "priority": 3
+    },
+    "repeat": {
+      "keywords": ["repeat", "again", "say that again", "come again", "pardon"],
+      "phrases": ["can you repeat", "say that again", "i didn't hear", "come again"],
+      "regex": "\\b(repeat|again|pardon)\\b.*",
+      "priority": 2
+    },
+    "unclear": {
+      "keywords": ["unclear", "confusing", "don't understand", "what do you mean", "huh"],
+      "phrases": ["i don't understand", "that's confusing", "what do you mean", "can you clarify"],
+      "regex": "\\b(unclear|confusing|understand)\\b.*",
+      "priority": 2
+    }
+  },
+  "stop_patterns": {
+    "keywords": ["exit", "quit", "stop", "end", "bye", "goodbye", "leave", "close"],
+    "phrases": ["i want to quit", "end conversation", "stop talking", "close chat"],
+    "regex": "^(exit|quit|stop|end|bye|goodbye)\\b.*"
+  },
+  "default_pattern": {
+    "intent": "unknown",
+    "confidence": 0.0,
+    "fallback": true
+  },
+  "pattern_config": {
+    "case_sensitive": false,
+    "match_partial": true,
+    "min_confidence": 0.3,
+    "max_matches": 3,
+    "enable_fuzzy_matching": false,
+    "word_boundary_required": true
+  }
+}

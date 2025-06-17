@@ -1,0 +1,250 @@
+{
+  "response_templates": {
+    "greeting": {
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! What can I do for you?",
+        "Good day! How may I assist you?",
+        "Hello! Welcome! What do you need?",
+        "Hi! I'm here to help. What's on your mind?",
+        "Hey! How can I be of service?"
+      ],
+      "follow_up": ["What can I do for you?", "How may I assist you?"],
+      "context": "initial_greeting"
+    },
+    "goodbye": {
+      "responses": [
+        "Goodbye! Have a great day!",
+        "See you later! Take care!",
+        "Bye! Thanks for chatting with me!",
+        "Farewell! Hope I was helpful!",
+        "Take care! Come back anytime!",
+        "Goodbye! It was nice talking to you!"
+      ],
+      "follow_up": [],
+      "context": "conversation_end"
+    },
+    "help": {
+      "responses": [
+        "I can help you with basic questions and information.",
+        "What do you need assistance with?",
+        "I'm here to help! What can I do for you?",
+        "Sure! I'd be happy to help. What do you need?",
+        "How can I assist you today?",
+        "I'm ready to help! What's your question?"
+      ],
+      "follow_up": ["What specific topic do you need help with?"],
+      "context": "providing_help"
+    },
+    "thanks": {
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "My pleasure!",
+        "Glad I could assist!",
+        "No problem at all!",
+        "Anytime! That's what I'm here for!"
+      ],
+      "follow_up": ["Is there anything else I can help you with?"],
+      "context": "acknowledgment"
+    },
+    "unknown": {
+      "responses": [
+        "I don't understand. Can you please rephrase that?",
+        "Sorry, I'm not sure about that. Could you be more specific?",
+        "I didn't catch that. Can you try asking differently?",
+        "Hmm, I'm not sure I understand. Can you clarify?",
+        "Could you please explain that in a different way?",
+        "I'm sorry, but I don't have information about that."
+      ],
+      "follow_up": ["Can you try asking in a different way?", "What else can I help you with?"],
+      "context": "clarification_needed"
+    },
+    "yes": {
+      "responses": [
+        "Great! Let's proceed.",
+        "Perfect! What's next?",
+        "Excellent! How can I continue to help?",
+        "Wonderful! What would you like to do next?",
+        "Awesome! I'm ready to continue.",
+        "Good! Let me know what you need next."
+      ],
+      "follow_up": ["What would you like to do next?"],
+      "context": "confirmation_positive"
+    },
+    "no": {
+      "responses": [
+        "No problem! What else can I help you with?",
+        "That's okay! Is there something else you need?",
+        "Understood! How else can I assist you?",
+        "No worries! What other questions do you have?",
+        "Alright! What else would you like to know?",
+        "Got it! Anything else I can help with?"
+      ],
+      "follow_up": ["What else can I help you with?"],
+      "context": "confirmation_negative"
+    },
+    "apologize": {
+      "responses": [
+        "I'm sorry about that!",
+        "My apologies!",
+        "Sorry for the confusion!",
+        "I apologize for any inconvenience!",
+        "Sorry about that mistake!",
+        "My bad! Let me try to help better."
+      ],
+      "follow_up": ["How can I make this right?", "Let me try to help you better."],
+      "context": "error_recovery"
+    },
+    "compliment": {
+      "responses": [
+        "Thank you for the kind words!",
+        "That's very nice of you to say!",
+        "I appreciate that!",
+        "Thank you! I'm glad I could help!",
+        "That's sweet of you to say!",
+        "Thanks! I do my best to be helpful!"
+      ],
+      "follow_up": ["How else can I assist you?"],
+      "context": "positive_feedback"
+    },
+    "complaint": {
+      "responses": [
+        "I'm sorry to hear that.",
+        "That's unfortunate. How can I help improve things?",
+        "I understand that must be frustrating.",
+        "Sorry that happened. Let me see how I can help.",
+        "That doesn't sound good. What can I do to assist?",
+        "I'm sorry you're having trouble. Let me help."
+      ],
+      "follow_up": ["How can I help make this better?", "What specific issue can I assist with?"],
+      "context": "problem_resolution"
+    },
+    "small_talk": {
+      "responses": [
+        "I'm doing well, thank you for asking!",
+        "I'm here and ready to help!",
+        "I'm good! How are you doing?",
+        "All good on my end! How can I help?",
+        "I'm fine, thanks! What about you?",
+        "Doing great! What brings you here today?"
+      ],
+      "follow_up": ["How are you doing today?", "What can I help you with?"],
+      "context": "casual_conversation"
+    },
+    "contact": {
+      "responses": [
+        "You can contact our support team for more help.",
+        "Please reach out to customer service for assistance.",
+        "For more detailed help, contact our support team.",
+        "You might want to speak with a human agent.",
+        "Let me connect you with someone who can help better.",
+        "For complex issues, please contact our support."
+      ],
+      "follow_up": ["Would you like me to provide contact information?"],
+      "context": "escalation"
+    },
+    "hours": {
+      "responses": [
+        "Our business hours are Monday to Friday, 9 AM to 6 PM.",
+        "We're open Monday through Friday, 9:00 AM to 6:00 PM.",
+        "Our office hours are 9 AM to 6 PM, weekdays only.",
+        "We operate from 9:00 AM to 6:00 PM, Monday to Friday.",
+        "Business hours: 9 AM - 6 PM, Monday through Friday."
+      ],
+      "follow_up": ["Is there anything else you'd like to know?"],
+      "context": "information_request"
+    },
+    "weather": {
+      "responses": [
+        "I don't have access to current weather data.",
+        "For weather information, please check a weather service.",
+        "I can't provide weather updates, but you can check online.",
+        "Sorry, I don't have weather information available."
+      ],
+      "follow_up": ["Is there something else I can help you with?"],
+      "context": "limitation_response"
+    },
+    "name": {
+      "responses": [
+        "I'm a chatbot assistant, here to help you!",
+        "You can call me Assistant. I'm here to help!",
+        "I'm your friendly chatbot helper!",
+        "I'm an AI assistant designed to help answer questions.",
+        "I'm a virtual assistant, ready to help you!"
+      ],
+      "follow_up": ["What can I help you with today?"],
+      "context": "self_introduction"
+    },
+    "capability": {
+      "responses": [
+        "I can help with basic questions, provide information, and assist with simple tasks.",
+        "I'm designed to answer questions and provide helpful information.",
+        "I can assist with general inquiries and provide basic support.",
+        "I'm here to help answer questions and provide information on various topics.",
+        "I can help with information requests and basic assistance."
+      ],
+      "follow_up": ["What specific help do you need?"],
+      "context": "capability_explanation"
+    },
+    "joke": {
+      "responses": [
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "I told my computer a joke about UDP... I'm not sure if it got it.",
+        "Why did the programmer quit his job? He didn't get arrays!",
+        "How do you comfort a JavaScript bug? You console it!",
+        "I'm not great with jokes, but I'm great with help! What do you need?"
+      ],
+      "follow_up": ["Hope that made you smile! What else can I help with?"],
+      "context": "entertainment"
+    },
+    "repeat": {
+      "responses": [
+        "Could you please repeat your question?",
+        "I didn't catch that. Can you say it again?",
+        "Sorry, could you rephrase that?",
+        "Can you repeat what you said?",
+        "I missed that. Could you say it again?"
+      ],
+      "follow_up": ["Please try asking your question again."],
+      "context": "clarification_request"
+    },
+    "unclear": {
+      "responses": [
+        "I understand it might be confusing. Can you be more specific?",
+        "Let me try to clarify. What exactly are you asking about?",
+        "I see this might be unclear. Can you provide more details?",
+        "To help you better, could you explain what you mean?",
+        "Let me help clarify. What specific information do you need?"
+      ],
+      "follow_up": ["Can you provide more details about what you need?"],
+      "context": "clarification_assistance"
+    }
+  },
+  "fallback_responses": {
+    "general": [
+      "I'm not sure about that. Can you try asking something else?",
+      "That's not something I can help with. What else can I do for you?",
+      "I don't have information on that topic. Is there something else I can help with?",
+      "I'm not able to answer that question. What else would you like to know?"
+    ],
+    "context": "fallback"
+  },
+  "conversation_starters": {
+    "responses": [
+      "Hello! I'm here to help. What can I do for you?",
+      "Hi there! What brings you here today?",
+      "Welcome! How can I assist you?",
+      "Hello! What would you like to know?"
+    ],
+    "context": "conversation_start"
+  },
+  "response_config": {
+    "random_selection": true,
+    "max_response_length": 200,
+    "include_follow_up": true,
+    "personalization": false,
+    "context_aware": true,
+    "default_context": "general"
+  }
+}
