@@ -1,12 +1,7 @@
+from json_data import JsonData as JD
 class RuleEngine:
-    def __init__(self):
-        self.rules = {
-            'greeting': 'respond_greeting',
-            'goodbye': 'respond_goodbye',
-            'help': 'provide_help',
-            'thanks': 'acknowledge_thanks',
-            'unknown': 'ask_clarification'
-        }
+    def __init__(self,cmd):
+        self.pattern = JD.Responses_Template(cmd)
 
-    def apply_rules(self, text,in_text):
-        return  self.rules.get(text, 'unknown')
+    def apply_rules(self, cmd):
+        return  self.pattern.get(cmd)

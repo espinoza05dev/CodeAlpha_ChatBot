@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc63d7c3-a17b-40bc-b328-a83edac200c8" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/Components/pattern_matcher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/json_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Components/json_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/chatbot_responses_template.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/chatbot_responses_template.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/artur/PycharmProjects/ChatBot&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/artur/PycharmProjects/VoiceAssistant&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -112,7 +114,8 @@
       <workItem from="1749962116895" duration="1466000" />
       <workItem from="1750018195295" duration="12279000" />
       <workItem from="1750100272473" duration="9511000" />
-      <workItem from="1750207468848" duration="935000" />
+      <workItem from="1750207468848" duration="2949000" />
+      <workItem from="1750284970450" duration="7211000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -178,7 +181,31 @@
       <option name="project" value="LOCAL" />
       <updated>1750208358672</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary=".">
+      <option name="closed" value="true" />
+      <created>1750208856299</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1750208856299</updated>
+    </task>
+    <task id="LOCAL-00010" summary=".">
+      <option name="closed" value="true" />
+      <created>1750208868892</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1750208868892</updated>
+    </task>
+    <task id="LOCAL-00011" summary=".">
+      <option name="closed" value="true" />
+      <created>1750208951457</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1750208951457</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

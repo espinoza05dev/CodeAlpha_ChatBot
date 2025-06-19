@@ -219,25 +219,25 @@
       ],
       "follow_up": ["Can you provide more details about what you need?"],
       "context": "clarification_assistance"
-    }
-  },
-  "fallback_responses": {
-    "general": [
+    },
+    "fallback_responses": {
+      "responses": [
       "I'm not sure about that. Can you try asking something else?",
       "That's not something I can help with. What else can I do for you?",
       "I don't have information on that topic. Is there something else I can help with?",
       "I'm not able to answer that question. What else would you like to know?"
     ],
     "context": "fallback"
-  },
-  "conversation_starters": {
-    "responses": [
+    },
+    "conversation_starters": {
+      "responses": [
       "Hello! I'm here to help. What can I do for you?",
       "Hi there! What brings you here today?",
       "Welcome! How can I assist you?",
       "Hello! What would you like to know?"
     ],
     "context": "conversation_start"
+  }
   },
   "response_config": {
     "random_selection": true,
