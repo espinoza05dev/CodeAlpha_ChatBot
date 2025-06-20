@@ -1,5 +1,5 @@
 import json
-from random import random
+from random import choice
 
 COMMANDS = {
     1: "greeting", 2: "goodbye", 3: "help", 4: "thanks", 5: "unknown", 6: "yes", 7: "no", 8: "apologize", 9: "compliment", 10: "complaint",
@@ -7,15 +7,18 @@ COMMANDS = {
     21:"fallback_responses",22:"conversation_starters"
 }
 
+path_template = r"../data_json/chatbot_responses_template.json"
+path_pattern = r"../data_json/patterns.json"
+
 class JsonData:
     def Responses_Template(self,cmd):
-        with open("chatbot_responses_template.json","r",encoding="utf-8") as f:
+        with open(path_template,"r",encoding="utf-8") as f:
             data = json.load(f)
-            if cmd in COMMANDS: return random.choice(" ".join(data["response_templates"][COMMANDS[cmd]]["responses"]))
+            if cmd in COMMANDS:return choice(data["response_templates"][COMMANDS[cmd]]["responses"])
             else: return ""
 
     def Patterns(self,cmd):
-        with open("patterns.json","r",encoding="utf-8") as f:
+        with open(path_pattern,"r",encoding="utf-8") as f:
             data = json.load(f)
-            if cmd in COMMANDS: return random.choice(" ".join(data["patterns"][COMMANDS[cmd]]["keywords"]))
+            if cmd in COMMANDS: return choice(data["patterns"][COMMANDS[cmd]]["keywords"])
             else: return ""
