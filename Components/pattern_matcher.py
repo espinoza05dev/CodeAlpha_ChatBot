@@ -7,16 +7,49 @@ COMMANDS = {
     21:"fallback_responses",22:"conversation_starters"
 }
 
-path_pattern = r"../data_json/patterns.json"
-current_dir = os.path.dirname(os.path.abspath(__file__))
-json_path = os.path.join(current_dir, '..', 'data_json', path_pattern)
-
 class PatternMatcher:
-    def match(self, cmd):
-        with open(path_pattern, "r", encoding="utf-8") as f:
-            data = json.load(f)
-            if cmd in COMMANDS: return choice(data["patterns"][COMMANDS[cmd]]["keywords"])
-            else: return ""
+    def __init__(self):
+        self.current_dir = os.path.dirname(os.path.abspath(__file__))
+        self.patterns_path = os.path.join(self.current_dir, '..', 'data_json', 'patterns.json')
+        self.patterns_data = self.load_patterns()
+
+    def load_patterns(self):
+        """Carga los patrones desde el archivo JSON"""
+        try:
+            with open(self.patterns_path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except FileNotFoundError:
+            print(f"Error: No se encontró el archivo {self.patterns_path}")
+            return {"patterns": {}}
+        except json.JSONDecodeError:
+            print("Error: El archivo JSON de patrones está mal formateado")
+            return {"patterns": {}}
+
+    def match(self, user_input):
+        """Encuentra la mejor coincidencia de patrón para la entrada del usuario"""
+        user_words = user_input.lower().split()
+        best_match = 5  # default: unknown
+        max_matches = 0
+
+        for cmd_num, intent in COMMANDS.items():
+            if intent in self.patterns_data.get("patterns", {}):
+                keywords = self.patterns_data["patterns"][intent].get("keywords", [])
+                matches = sum(1 for keyword in keywords if keyword.lower() in user_input.lower())
+
+                if matches > max_matches:
+                    max_matches = matches
+                    best_match = cmd_num
+
+        return best_match
+
+    def get_pattern_keywords(self, cmd):
+        """Obtiene las palabras clave para un comando específico"""
+        if cmd in COMMANDS:
+            intent = COMMANDS[cmd]
+            if intent in self.patterns_data.get("patterns", {}):
+                return self.patterns_data["patterns"][intent].get("keywords", [])
+        return []
+
 
 if __name__ == '__main__':
     res = PatternMatcher()
