@@ -41,7 +41,3 @@ class RuleEngine:
             "Cuéntame más sobre eso, me interesa saber tu opinión."
         ]
         return choice(fallback_responses)
-
-if __name__ == '__main__':
-    res = RuleEngine()
-    print(res.apply_rules(2))

@@ -50,7 +50,3 @@ class PatternMatcher:
                 return self.patterns_data["patterns"][intent].get("keywords", [])
         return []
 
-
-if __name__ == '__main__':
-    res = PatternMatcher()
-    print(res.match(1))
