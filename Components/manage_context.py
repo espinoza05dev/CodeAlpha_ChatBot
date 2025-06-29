@@ -16,10 +16,10 @@ class ManageContext:
             with open(self.template_path, "r", encoding="utf-8") as f:
                 return json.load(f)
         except FileNotFoundError:
-            print(f"Error: No se encontró el archivo {self.template_path}")
+            print(f"Error: FILE not found {self.template_path}")
             return {"response_templates": {}}
         except json.JSONDecodeError:
-            print("Error: El archivo JSON está mal formateado")
+            print("Error: WRONG FORMAT")
             return {"response_templates": {}}
 
     def set_context(self, context):
@@ -48,11 +48,11 @@ class ManageContext:
 
     def generate_response(self, user_input, intent):
         if intent not in self.data.get("response_templates", {}):
-            return "No estoy seguro de cómo responder a eso."
+            return "I'm sorry, but I don't understand what you meant."
 
         responses = self.data["response_templates"][intent].get("responses", [])
         if not responses:
-            return "Lo siento, no tengo una respuesta para eso."
+            return "I'm sorry, I don't have an answer for that."
 
         main_response = choice(responses)
 

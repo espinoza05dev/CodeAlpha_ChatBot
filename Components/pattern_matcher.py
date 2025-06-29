@@ -18,10 +18,10 @@ class PatternMatcher:
             with open(self.patterns_path, "r", encoding="utf-8") as f:
                 return json.load(f)
         except FileNotFoundError:
-            print(f"Error: No se encontró el archivo {self.patterns_path}")
+            print(f"Error: FILE not found  {self.patterns_path}")
             return {"patterns": {}}
         except json.JSONDecodeError:
-            print("Error: El archivo JSON de patrones está mal formateado")
+            print("Error: WRONG FORMAT")
             return {"patterns": {}}
 
     def match(self, user_input):
