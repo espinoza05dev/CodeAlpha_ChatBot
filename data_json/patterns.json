@@ -1,141 +1,141 @@
 {
   "patterns": {
     "greeting": {
-      "keywords": ["hello", "hi", "hey", "good morning", "good afternoon", "good evening", "greetings", "howdy", "what's up", "sup"],
-      "phrases": ["how are you", "how do you do", "nice to meet you", "good to see you"],
+      "keywords": ["hello", "hi", "hey", "good morning", "good afternoon", "good evening", "greetings", "howdy", "what's up", "sup", "yo", "heya", "hiya", "hola", "bonjour", "welcome", "salutations", "aloha", "g'day", "top of the morning", "cheerio", "ahoy", "well hello", "look who's here", "fancy meeting you"],
+      "phrases": ["how are you", "how do you do", "nice to meet you", "good to see you", "pleased to meet you", "how's everything", "how have you been", "long time no see", "what brings you here", "how's life treating you", "good to have you here", "welcome aboard", "glad you're here", "how's your day going"],
       "regex": "^(hi|hello|hey)\\b.*",
       "priority": 1
     },
     "goodbye": {
-      "keywords": ["bye", "goodbye", "farewell", "see you", "later", "exit", "quit", "stop", "end", "leave"],
-      "phrases": ["see you later", "talk to you later", "catch you later", "until next time", "have a good day", "take care"],
+      "keywords": ["bye", "goodbye", "farewell", "see you", "later", "exit", "quit", "stop", "end", "leave", "adios", "au revoir", "ciao", "cheerio", "toodles", "peace out", "so long", "until we meet again", "signing off", "gotta go", "catch you later", "peace", "out", "ta-ta", "godspeed"],
+      "phrases": ["see you later", "talk to you later", "catch you later", "until next time", "have a good day", "take care", "it's been a pleasure", "thanks for your time", "gotta run", "see you around", "have a great one", "stay safe", "keep in touch", "until we speak again", "fare thee well", "have a wonderful day", "safe travels", "be well", "talk soon", "see you next time"],
       "regex": "^(bye|goodbye|exit|quit)\\b.*",
       "priority": 1
     },
     "help": {
-      "keywords": ["help", "assist", "support", "aid", "guide", "explain", "how", "what", "can you"],
-      "phrases": ["i need help", "can you help", "help me", "i don't know", "i'm confused", "what can you do"],
+      "keywords": ["help", "assist", "support", "aid", "guide", "explain", "how", "what", "can you", "assistance", "guidance", "instruction", "tutorial", "clarification", "advice", "direction", "coaching", "mentoring", "walkthrough", "demonstration", "show me", "teach me", "inform", "enlighten", "advise"],
+      "phrases": ["i need help", "can you help", "help me", "i don't know", "i'm confused", "what can you do", "could you assist me", "i need assistance", "can you guide me", "i'm stuck", "i need support", "can you show me", "help me understand", "i could use some help", "point me in the right direction", "give me a hand", "lend me a hand", "i'm lost", "need some guidance", "could you explain"],
       "regex": "\\b(help|assist|support)\\b.*",
       "priority": 2
     },
     "thanks": {
-      "keywords": ["thank", "thanks", "appreciate", "grateful", "thx", "ty"],
-      "phrases": ["thank you", "thanks a lot", "much appreciated", "i appreciate it"],
+      "keywords": ["thank", "thanks", "appreciate", "grateful", "thx", "ty", "cheers", "kudos", "props", "gratitude", "recognition", "acknowledgment", "praise", "much obliged", "bless you", "thankful", "indebted", "obliged", "gracias", "merci", "danke", "arigato", "grazie", "spasibo", "shukran"],
+      "phrases": ["thank you", "thanks a lot", "much appreciated", "i appreciate it", "thanks so much", "i'm grateful", "you're a lifesaver", "couldn't have done it without you", "that means a lot", "you're the best", "i owe you one", "thanks a million", "you've been so helpful", "i really appreciate your help", "that's very kind of you", "you're amazing", "thanks for everything", "i can't thank you enough", "you're wonderful", "bless your heart"],
       "regex": "\\b(thank|thanks)\\b.*",
       "priority": 1
     },
     "yes": {
-      "keywords": ["yes", "yeah", "yep", "sure", "ok", "okay", "alright", "correct", "right", "exactly"],
-      "phrases": ["that's right", "you got it", "sounds good", "i agree"],
+      "keywords": ["yes", "yeah", "yep", "sure", "ok", "okay", "alright", "correct", "right", "exactly", "absolutely", "definitely", "certainly", "indeed", "affirmative", "roger", "copy that", "you bet", "of course", "naturally", "obviously", "precisely", "spot on", "bingo", "bull's eye"],
+      "phrases": ["that's right", "you got it", "sounds good", "i agree", "you're absolutely right", "that's correct", "i'm on board", "count me in", "that works for me", "no problem", "that's perfect", "exactly what i meant", "couldn't agree more", "you nailed it", "that's the one", "right on target", "that's it exactly", "you hit the nail on the head", "i'm with you", "that makes sense"],
       "regex": "^(yes|yeah|yep|ok|okay)\\b.*",
       "priority": 1
     },
     "no": {
-      "keywords": ["no", "nope", "nah", "never", "not really", "incorrect", "wrong"],
-      "phrases": ["i don't think so", "that's not right", "i disagree", "not really"],
+      "keywords": ["no", "nope", "nah", "never", "not really", "incorrect", "wrong", "negative", "disagree", "refuse", "deny", "reject", "decline", "oppose", "protest", "dissent", "contradict", "dispute", "challenge", "object", "resist", "rebuff", "veto", "turn down", "pass"],
+      "phrases": ["i don't think so", "that's not right", "i disagree", "not really", "i'm afraid not", "that's incorrect", "i don't agree", "i beg to differ", "that's wrong", "not quite", "i'm not convinced", "i have my doubts", "that doesn't sound right", "i'm not sure about that", "i wouldn't say so", "i don't see it that way", "that's not how i see it", "i'm not buying it", "count me out", "not my cup of tea"],
       "regex": "^(no|nope|nah)\\b.*",
       "priority": 1
     },
     "question": {
-      "keywords": ["what", "where", "when", "why", "how", "who", "which", "whose"],
-      "phrases": ["tell me about", "i want to know", "can you explain", "what is"],
+      "keywords": ["what", "where", "when", "why", "how", "who", "which", "whose", "inquire", "query", "ask", "wonder", "curious", "questioning", "interrogate", "probe", "investigate", "explore", "examine", "research", "study", "analyze", "clarify", "specify", "determine"],
+      "phrases": ["tell me about", "i want to know", "can you explain", "what is", "i'm curious about", "could you tell me", "i'd like to know", "can you clarify", "what exactly is", "help me understand", "i'm wondering about", "could you elaborate", "what's the deal with", "fill me in on", "give me the scoop", "what's the story behind", "break it down for me", "walk me through", "shed some light on", "enlighten me about"],
       "regex": "^(what|where|when|why|how|who|which)\\b.*\\?",
       "priority": 3
     },
     "apologize": {
-      "keywords": ["sorry", "apologize", "my bad", "oops", "mistake", "error"],
-      "phrases": ["i'm sorry", "my apologies", "i apologize", "sorry about that"],
+      "keywords": ["sorry", "apologize", "my bad", "oops", "mistake", "error", "regret", "remorse", "repent", "fault", "blame", "guilt", "ashamed", "embarrassed", "whoops", "darn", "shoot", "crud", "goof", "blunder", "slip-up", "oversight", "mishap", "bungle", "screw-up"],
+      "phrases": ["i'm sorry", "my apologies", "i apologize", "sorry about that", "i feel terrible", "i didn't mean to", "that was my fault", "i messed up", "i made a mistake", "please forgive me", "i should have known better", "i regret that", "i'm embarrassed", "that was thoughtless of me", "i take full responsibility", "i'm so sorry", "please accept my apologies", "i feel awful about this", "i hope you can forgive me", "that was inexcusable"],
       "regex": "\\b(sorry|apologize)\\b.*",
       "priority": 2
     },
     "compliment": {
-      "keywords": ["good", "great", "awesome", "excellent", "amazing", "wonderful", "fantastic", "perfect"],
-      "phrases": ["you're great", "good job", "well done", "that's amazing", "you're awesome"],
+      "keywords": ["good", "great", "awesome", "excellent", "amazing", "wonderful", "fantastic", "perfect", "brilliant", "outstanding", "superb", "magnificent", "marvelous", "spectacular", "impressive", "incredible", "phenomenal", "extraordinary", "exceptional", "remarkable", "fabulous", "terrific", "splendid", "divine", "stellar"],
+      "phrases": ["you're great", "good job", "well done", "that's amazing", "you're awesome", "you're incredible", "that's fantastic", "you nailed it", "brilliant work", "outstanding job", "you're the best", "that's perfect", "you're wonderful", "impressive work", "you're a star", "that's excellent", "you're phenomenal", "superb job", "you're fantastic", "that's brilliant"],
       "regex": "\\b(good|great|awesome|excellent)\\b.*",
       "priority": 2
     },
     "complaint": {
-      "keywords": ["bad", "terrible", "awful", "horrible", "worst", "hate", "sucks", "useless"],
-      "phrases": ["this is bad", "doesn't work", "not working", "having problems", "this sucks"],
+      "keywords": ["bad", "terrible", "awful", "horrible", "worst", "hate", "sucks", "useless", "pathetic", "disgusting", "annoying", "frustrating", "disappointing", "inadequate", "inferior", "defective", "broken", "faulty", "lousy", "crappy", "trash", "garbage", "ridiculous", "absurd", "unacceptable"],
+      "phrases": ["this is bad", "doesn't work", "not working", "having problems", "this sucks", "i hate this", "this is terrible", "what a mess", "this is frustrating", "i'm disappointed", "this is ridiculous", "this is unacceptable", "i'm fed up", "this is a disaster", "what a joke", "this is pathetic", "i can't stand this", "this is driving me crazy", "this is a nightmare", "i'm not happy with this"],
       "regex": "\\b(bad|terrible|awful|horrible|hate)\\b.*",
       "priority": 2
     },
     "small_talk": {
-      "keywords": ["how are you", "how's it going", "what's new", "how have you been"],
-      "phrases": ["how are you doing", "what's up with you", "how's your day", "how are things"],
+      "keywords": ["how are you", "how's it going", "what's new", "how have you been", "what's happening", "how's life", "what's good", "how are things", "how's everything", "what have you been up to", "how's your day", "what's the word", "how's tricks", "what's cooking", "how are you doing", "what's shaking", "how's the world treating you", "what's the latest", "how goes it", "what's up with you", "how's business", "what's your story", "how's the family", "what's on your mind", "how are you holding up"],
+      "phrases": ["how are you doing", "what's up with you", "how's your day", "how are things", "what have you been up to lately", "how's everything going", "what's new in your world", "how's life treating you", "what's been keeping you busy", "how have you been lately", "what's going on", "how's your week been", "what's the latest news", "how are you feeling", "what's happening in your life", "how's everything with you", "what brings you joy these days", "how's your mood today", "what's occupying your thoughts", "how's your spirit"],
       "regex": "how\\s+(are|is)\\s+you.*",
       "priority": 3
     },
     "contact": {
-      "keywords": ["contact", "phone", "email", "address", "reach", "call", "write"],
-      "phrases": ["contact information", "how to reach", "get in touch", "contact details"],
+      "keywords": ["contact", "phone", "email", "address", "reach", "call", "write", "message", "communicate", "connect", "touch base", "get in touch", "correspondence", "liaison", "network", "outreach", "interaction", "dialogue", "exchange", "conference", "meeting", "appointment", "consultation", "discussion", "conversation"],
+      "phrases": ["contact information", "how to reach", "get in touch", "contact details", "phone number", "email address", "mailing address", "how can i contact you", "ways to reach you", "communication methods", "how to get hold of you", "contact options", "reach out to you", "connect with you", "get back to you", "touch base with you", "drop you a line", "give you a call", "send you a message", "correspondence details"],
       "regex": "\\b(contact|phone|email|call)\\b.*",
       "priority": 2
     },
     "hours": {
-      "keywords": ["hours", "time", "open", "closed", "schedule", "when"],
-      "phrases": ["business hours", "opening hours", "what time", "when are you open", "are you open"],
+      "keywords": ["hours", "time", "open", "closed", "schedule", "when", "timing", "availability", "duration", "timetable", "calendar", "appointment", "business hours", "operating hours", "office hours", "working hours", "service hours", "opening time", "closing time", "weekdays", "weekends", "holidays", "24/7", "round the clock", "after hours"],
+      "phrases": ["business hours", "opening hours", "what time", "when are you open", "are you open", "what are your hours", "when do you close", "operating schedule", "availability hours", "service times", "when can i reach you", "office schedule", "working schedule", "when are you available", "what time do you open", "hours of operation", "when do you start", "what's your schedule", "timing information", "when can i contact you"],
       "regex": "\\b(hours|time|open|closed|schedule)\\b.*",
       "priority": 2
     },
     "price": {
-      "keywords": ["price", "cost", "fee", "charge", "money", "pay", "payment", "expensive", "cheap"],
-      "phrases": ["how much", "what does it cost", "pricing information", "cost of"],
+      "keywords": ["price", "cost", "fee", "charge", "money", "pay", "payment", "expensive", "cheap", "budget", "affordable", "rate", "tariff", "fare", "toll", "premium", "value", "worth", "expense", "financial", "monetary", "cash", "currency", "dollar", "cents", "bill"],
+      "phrases": ["how much", "what does it cost", "pricing information", "cost of", "what's the price", "how much does it cost", "what are your rates", "pricing details", "cost breakdown", "fee structure", "payment options", "what do you charge", "price range", "budget requirements", "cost estimate", "pricing plans", "what's the fee", "expense details", "financial information", "payment terms"],
       "regex": "\\b(price|cost|fee|charge|money|pay)\\b.*",
       "priority": 2
     },
     "location": {
-      "keywords": ["where", "location", "address", "place", "find", "directions"],
-      "phrases": ["where are you", "where is", "how to find", "your location"],
+      "keywords": ["where", "location", "address", "place", "find", "directions", "map", "navigate", "route", "destination", "vicinity", "area", "region", "district", "neighborhood", "locale", "position", "site", "spot", "venue", "coordinates", "landmark", "geography", "proximity", "distance"],
+      "phrases": ["where are you", "where is", "how to find", "your location", "street address", "physical location", "where can i find", "directions to", "how to get there", "location details", "address information", "where exactly", "geographic location", "specific location", "nearest location", "location coordinates", "how to locate", "where is it located", "find your way", "location guide"],
       "regex": "\\bwhere\\b.*",
       "priority": 2
     },
     "weather": {
-      "keywords": ["weather", "temperature", "rain", "sunny", "cloudy", "snow", "hot", "cold"],
-      "phrases": ["how's the weather", "what's the weather like", "weather forecast"],
+      "keywords": ["weather", "temperature", "rain", "sunny", "cloudy", "snow", "hot", "cold", "forecast", "climate", "humidity", "wind", "storm", "precipitation", "atmospheric", "meteorology", "barometric", "seasonal", "tropical", "arctic", "temperate", "conditions", "elements", "outdoors", "environment"],
+      "phrases": ["how's the weather", "what's the weather like", "weather forecast", "temperature today", "is it raining", "weather conditions", "climate information", "atmospheric conditions", "weather update", "meteorological report", "weather patterns", "seasonal weather", "outdoor conditions", "environmental conditions", "weather status", "current weather", "weather outlook", "climate conditions", "weather report", "atmospheric pressure"],
       "regex": "\\b(weather|temperature|rain|sunny)\\b.*",
       "priority": 3
     },
     "name": {
-      "keywords": ["name", "called", "who are you", "your name"],
-      "phrases": ["what's your name", "who are you", "what are you called"],
+      "keywords": ["name", "called", "who are you", "your name", "identity", "title", "designation", "moniker", "alias", "handle", "username", "nickname", "label", "tag", "brand", "signature", "identifier", "appellation", "denomination", "nomenclature", "christened", "dubbed", "termed", "known as", "referred to"],
+      "phrases": ["what's your name", "who are you", "what are you called", "what do they call you", "how are you known", "what should i call you", "name identification", "your identity", "how do you identify yourself", "what's your title", "your designation", "how are you addressed", "what name do you go by", "identity information", "what are you named", "your personal name", "identification details", "what's your handle", "your moniker", "how do people refer to you"],
       "regex": "\\b(name|called)\\b.*|who\\s+are\\s+you",
       "priority": 2
     },
     "age": {
-      "keywords": ["age", "old", "how long", "when were you"],
-      "phrases": ["how old are you", "what's your age", "when were you created"],
+      "keywords": ["age", "old", "how long", "when were you", "years", "birthday", "born", "created", "established", "originated", "inception", "genesis", "beginning", "start", "launch", "debut", "anniversary", "vintage", "era", "generation", "time period", "duration", "lifespan", "existence"],
+      "phrases": ["how old are you", "what's your age", "when were you created", "when were you born", "how long have you existed", "what year were you made", "age information", "when did you start", "your creation date", "how long have you been around", "when did you begin", "your origin date", "time of creation", "when were you established", "your inception date", "how many years", "age details", "your timeline", "creation timeline", "existence duration"],
       "regex": "\\b(age|old)\\b.*|how\\s+old",
       "priority": 3
     },
     "capability": {
-      "keywords": ["can you", "do you", "are you able", "what can you do"],
-      "phrases": ["what can you do", "what are you capable of", "can you help with"],
+      "keywords": ["can you", "do you", "are you able", "what can you do", "ability", "skill", "talent", "capability", "capacity", "competence", "proficiency", "expertise", "function", "feature", "service", "potential", "power", "strength", "facility", "aptitude", "qualification", "accomplishment", "performance", "execution"],
+      "phrases": ["what can you do", "what are you capable of", "can you help with", "what are your abilities", "what skills do you have", "what functions do you perform", "what services do you provide", "what are your features", "how can you assist", "what's your expertise", "what are you good at", "what can you accomplish", "your capabilities", "what do you specialize in", "your skill set", "what tasks can you handle", "your functionality", "what are you designed for", "your strengths", "what can you perform"],
       "regex": "\\b(can\\s+you|do\\s+you|able)\\b.*",
       "priority": 2
     },
     "joke": {
-      "keywords": ["joke", "funny", "laugh", "humor", "tell me something funny"],
-      "phrases": ["tell me a joke", "make me laugh", "something funny"],
+      "keywords": ["joke", "funny", "laugh", "humor", "comedy", "amusing", "hilarious", "witty", "comical", "entertaining", "playful", "jest", "pun", "riddle", "gag", "quip", "wisecrack", "banter", "lighthearted", "cheerful", "jovial", "merry", "giggle", "chuckle", "smile"],
+      "phrases": ["tell me a joke", "make me laugh", "something funny", "be humorous", "entertain me", "amuse me", "lighten the mood", "cheer me up", "something amusing", "make me smile", "tell me something hilarious", "be witty", "crack a joke", "share some humor", "something comical", "be playful", "tell me a funny story", "something entertaining", "make me giggle", "brighten my day"],
       "regex": "\\b(joke|funny|laugh)\\b.*",
       "priority": 3
     },
     "repeat": {
-      "keywords": ["repeat", "again", "say that again", "come again", "pardon"],
-      "phrases": ["can you repeat", "say that again", "i didn't hear", "come again"],
+      "keywords": ["repeat", "again", "say that again", "come again", "pardon", "reiterate", "restate", "recite", "echo", "duplicate", "replay", "reproduce", "rehearse", "rerun", "redo", "retry", "once more", "another time", "over again", "one more time", "clarify", "elaborate", "explain again", "go over", "review"],
+      "phrases": ["can you repeat", "say that again", "i didn't hear", "come again", "please repeat that", "could you say that again", "i missed that", "can you reiterate", "repeat please", "one more time", "could you go over that again", "i didn't catch that", "please clarify", "can you restate that", "say it again", "could you repeat yourself", "i need to hear that again", "please say that once more", "repeat that please", "could you elaborate again"],
       "regex": "\\b(repeat|again|pardon)\\b.*",
       "priority": 2
     },
     "unclear": {
-      "keywords": ["unclear", "confusing", "don't understand", "what do you mean", "huh"],
-      "phrases": ["i don't understand", "that's confusing", "what do you mean", "can you clarify"],
+      "keywords": ["unclear", "confusing", "don't understand", "what do you mean", "huh", "ambiguous", "vague", "puzzling", "perplexing", "baffling", "bewildering", "mystifying", "incomprehensible", "obscure", "muddy", "foggy", "hazy", "cryptic", "enigmatic", "indecipherable", "unintelligible", "incoherent", "garbled", "jumbled", "muddled"],
+      "phrases": ["i don't understand", "that's confusing", "what do you mean", "can you clarify", "i'm confused", "that doesn't make sense", "i'm lost", "could you explain that", "i don't follow", "that's unclear to me", "i need clarification", "what are you saying", "i don't get it", "that's puzzling", "could you be more specific", "i'm not following you", "that's vague", "i need more information", "could you elaborate", "that's ambiguous"],
       "regex": "\\b(unclear|confusing|understand)\\b.*",
       "priority": 2
     }
   },
   "stop_patterns": {
-    "keywords": ["exit", "quit", "stop", "end", "bye", "goodbye", "leave", "close"],
-    "phrases": ["i want to quit", "end conversation", "stop talking", "close chat"],
+    "keywords": ["exit", "quit", "stop", "end", "bye", "goodbye", "leave", "close", "terminate", "finish", "conclude", "halt", "cease", "discontinue", "abort", "cancel", "shutdown", "logout", "signoff", "depart", "withdraw", "retreat", "escape", "flee"],
+    "phrases": ["i want to quit", "end conversation", "stop talking", "close chat", "i'm done", "that's all", "goodbye for now", "time to go", "end session", "close application", "shut down", "log off", "sign out", "terminate chat", "finish conversation", "stop the session", "end this", "close out", "wrap up", "call it a day"],
     "regex": "^(exit|quit|stop|end|bye|goodbye)\\b.*"
   },
   "default_pattern": {
