@@ -21,9 +21,9 @@ def chatbot():
     chat = True
 
     print("=" * 50)
-    print("BIENVENIDO, SOY TU CHAT BOT")
-    print("ESCRIBE CUALQUIER COSA Y TRATARÉ DE AYUDARTE")
-    print("Escribe 'adiós', 'bye' o 'salir' para terminar")
+    print("WELLCOME, I AM YOUR CHAT BOT")
+    print("WRITE ANYTHING, I WILL TRY OT HELP YOU")
+    print("WRITE 'adiós', 'bye' or 'exit' TO END THE CONVERSATION")
     print("=" * 50)
 
     while chat:
