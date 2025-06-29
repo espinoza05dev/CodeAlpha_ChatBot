@@ -23,7 +23,7 @@ def chatbot():
     print("=" * 50)
     print("WELLCOME, I AM YOUR CHAT BOT")
     print("WRITE ANYTHING, I WILL TRY OT HELP YOU")
-    print("WRITE 'adiós', 'bye' or 'exit' TO END THE CONVERSATION")
+    print("WRITE 'bye' or 'exit' TO END THE CONVERSATION")
     print("=" * 50)
 
     while chat:
@@ -31,7 +31,7 @@ def chatbot():
             user_input = input("\nTú: ").strip()
 
             if not user_input:
-                print("Bot: Por favor, escribe algo para poder ayudarte.")
+                print("Bot: Please, write something to help you.")
                 continue
 
             cleaned_input = clean_In.CleanInput(user_input)
@@ -49,14 +49,11 @@ def chatbot():
 
             print(f"Bot: {response}")
 
-            # Debug info (opcional - comentar en producción)
-            # print(f"[DEBUG] Comando: {matched_command}, Intención: {intent}")
-
         except KeyboardInterrupt:
-            print("\nBot: ¡Hasta luego! Gracias por chatear conmigo.")
+            print("\nBot: ¡Bye! it was nice to meet you.")
             break
         except Exception as e:
-            print("Bot: Ups, algo salió mal. ¿Puedes intentar de nuevo?")
+            print("Bot: Ups, something gone wrong. ¿Could you try it again?")
             print(f"[ERROR] {e}")
 
 
