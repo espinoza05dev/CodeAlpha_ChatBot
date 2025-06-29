@@ -12,7 +12,6 @@ class ManageContext:
         self.data = self.load_json_data()
 
     def load_json_data(self):
-        """Carga los datos JSON desde el archivo"""
         try:
             with open(self.template_path, "r", encoding="utf-8") as f:
                 return json.load(f)
@@ -24,15 +23,12 @@ class ManageContext:
             return {"response_templates": {}}
 
     def set_context(self, context):
-        """Establece el contexto actual"""
         self.current_context = context
 
     def get_context(self):
-        """Obtiene el contexto actual"""
         return self.current_context
 
     def add_to_history(self, user_input, bot_response):
-        """Añade la interacción al historial"""
         self.conversation_history.append({
             "user": user_input,
             "bot": bot_response,
@@ -40,12 +36,10 @@ class ManageContext:
         })
 
     def should_add_follow_up(self):
-        """Determina si se debe agregar un follow-up"""
         return (self.current_context == "initial_greeting" or
                 len(self.conversation_history) == 0)
 
     def get_follow_up(self, intent):
-        """Obtiene un follow-up apropiado para la intención"""
         if intent in self.data.get("response_templates", {}):
             follow_ups = self.data["response_templates"][intent].get("follow_up", [])
             if follow_ups and self.should_add_follow_up():
@@ -53,32 +47,26 @@ class ManageContext:
         return None
 
     def generate_response(self, user_input, intent):
-        """Genera una respuesta contextual"""
         if intent not in self.data.get("response_templates", {}):
             return "No estoy seguro de cómo responder a eso."
 
-        # Respuesta principal
         responses = self.data["response_templates"][intent].get("responses", [])
         if not responses:
             return "Lo siento, no tengo una respuesta para eso."
 
         main_response = choice(responses)
 
-        # Establecer contexto
         context = self.data["response_templates"][intent].get("context")
         if context:
             self.set_context(context)
 
-        # Agregar follow_up si corresponde
         follow_up = self.get_follow_up(intent)
 
-        # Construir respuesta final
         if follow_up:
             final_response = f"{main_response} {follow_up}"
         else:
             final_response = main_response
 
-        # Añadir al historial
         self.add_to_history(user_input, final_response)
 
         return final_response

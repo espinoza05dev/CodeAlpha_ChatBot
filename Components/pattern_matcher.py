@@ -14,7 +14,6 @@ class PatternMatcher:
         self.patterns_data = self.load_patterns()
 
     def load_patterns(self):
-        """Carga los patrones desde el archivo JSON"""
         try:
             with open(self.patterns_path, "r", encoding="utf-8") as f:
                 return json.load(f)
@@ -26,7 +25,6 @@ class PatternMatcher:
             return {"patterns": {}}
 
     def match(self, user_input):
-        """Encuentra la mejor coincidencia de patrón para la entrada del usuario"""
         user_words = user_input.lower().split()
         best_match = 5  # default: unknown
         max_matches = 0
@@ -43,7 +41,6 @@ class PatternMatcher:
         return best_match
 
     def get_pattern_keywords(self, cmd):
-        """Obtiene las palabras clave para un comando específico"""
         if cmd in COMMANDS:
             intent = COMMANDS[cmd]
             if intent in self.patterns_data.get("patterns", {}):
