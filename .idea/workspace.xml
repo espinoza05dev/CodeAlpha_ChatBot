@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc63d7c3-a17b-40bc-b328-a83edac200c8" name="Changes" comment="." />
+    <list default="true" id="cc63d7c3-a17b-40bc-b328-a83edac200c8" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -217,7 +219,7 @@
       <workItem from="1750604036984" duration="903000" />
       <workItem from="1750645409235" duration="6167000" />
       <workItem from="1750740671565" duration="77000" />
-      <workItem from="1751165849380" duration="1985000" />
+      <workItem from="1751165849380" duration="2467000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -403,7 +405,31 @@
       <option name="project" value="LOCAL" />
       <updated>1751167840072</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="more keywords and phrases added">
+      <option name="closed" value="true" />
+      <created>1751167883622</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1751167883622</updated>
+    </task>
+    <task id="LOCAL-00025" summary=".">
+      <option name="closed" value="true" />
+      <created>1751167892157</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1751167892157</updated>
+    </task>
+    <task id="LOCAL-00026" summary=".">
+      <option name="closed" value="true" />
+      <created>1751168228156</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1751168228156</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,6 +442,7 @@
     <MESSAGE value="json" />
     <MESSAGE value="done" />
     <MESSAGE value="more responses" />
+    <MESSAGE value="more keywords and phrases added" />
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
